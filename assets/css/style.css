@@ -8,6 +8,15 @@
 
 .titleSpan:hover {
     color: rgb(145, 253, 21);
+    text-decoration: none;
+}
+
+.titleHover {
+    text-decoration: none;
+}
+
+a:hover {
+text-decoration: none;
 }
 
 /* .meSpacerHeight {
@@ -18,14 +27,25 @@
 .meCartoon {
     margin: 0;
 }
+.meCartoon:hover {
+    /* -webkit-filter: invert(100%) !important; */
+    color: green;
+}
+
 .appleii {
     margin: 30% 0 0 0;
     width: 80%;
 }
 
-.codeDiv {
-
-    /* width: 100%;
-    height: 90%;
-    background-image: url("../images/codeBG.jpg"); */
+.appleii:hover {
+    /* -webkit-filter: invert(100%) !important; */
 }
+
+
+
+/* .codeDiv {
+
+    width: 100%;
+    height: 90%;
+    background-image: url("../images/codeBG.jpg"); 
+} */
