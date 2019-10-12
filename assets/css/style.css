@@ -1,0 +1,31 @@
+.titleSpan {
+    color: black;
+    text-align: center;
+    font-size: 800%;
+    margin: 0;
+    padding: 2%;
+}
+
+.titleSpan:hover {
+    color: rgb(145, 253, 21);
+}
+
+/* .meSpacerHeight {
+    opacity: 0;
+    width: 10px;
+    
+} */
+.meCartoon {
+    margin: 0;
+}
+.appleii {
+    margin: 30% 0 0 0;
+    width: 80%;
+}
+
+.codeDiv {
+
+    /* width: 100%;
+    height: 90%;
+    background-image: url("../images/codeBG.jpg"); */
+}
