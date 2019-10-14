@@ -3,7 +3,7 @@
     text-align: center;
     font-size: 800%;
     margin: 0;
-    padding: 2%;
+    padding: 2% auto 0 auto;
 }
 
 .titleSpan:hover {
@@ -29,10 +29,12 @@ text-decoration: none;
     margin: 0 auto;
     
 }
-.meCartoon:hover {
-    /* -webkit-filter: invert(100%) !important; */
-    color: green;
+.aboutTextHover {
+    text-align: center;
+    color: rgb(145, 253, 21);
 }
+
+
 
 .appleii {
     display: block;
@@ -41,26 +43,53 @@ text-decoration: none;
     
 }
 
-.appleii:hover {
-    /* -webkit-filter: invert(100%) !important; */
-}
-
-
-
-/* .codeDiv {
-
-    width: 100%;
-    height: 90%;
-    background-image: url("../images/codeBG.jpg"); 
-} */
-
 .codeTextHover {
     text-align: center;
     color: rgb(145, 253, 21);
 }
 
+.saw {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    
+}
+
+.sawTextHover {
+    text-align: center;
+    color: rgb(145, 253, 21);
+}
+
+
+/* CODING PORTFOLIO PAGE */
+
+
 .codeSiteCards {
     display: block;
     margin: 7% auto;
     width: 80%
+}
+
+
+/* ABOUT ME PAGE */
+
+
+.mePic {
+    display: block;
+    margin: 7% auto;
+    width: 80%
+}
+
+.mePicHover {
+    text-align: center;
+    color: rgb(145, 253, 21);
+}
+
+.aboutText {
+    padding: 40% 0   
+}
+
+.aboutText:hover {
+    color: rgb(145, 253, 21);
+
 }
