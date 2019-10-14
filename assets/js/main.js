@@ -1,5 +1,5 @@
 $(".appleii").mouseover(function () {
-    $(".codeTextHover").text("<CODE_PORTFOLIO>");
+    $(".codeTextHover").text("<_CODE>");
 });
 $(".appleii").mouseout(function () {
     $(".codeTextHover").text("");
