@@ -4,6 +4,7 @@
     font-size: 800%;
     margin: 0;
     padding: 2% auto 0 auto;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .titleSpan:hover {
@@ -17,6 +18,18 @@
 
 a:hover {
 text-decoration: none;
+}
+
+.E_magic {
+    color: black;
+    text-decoration: none;
+    background-color: none;
+    border: none;
+}
+
+.E_magic:hover {
+    color: rgb(145, 253, 21);
+    text-decoration: none;
 }
 
 /* .meSpacerHeight {
@@ -92,4 +105,26 @@ text-decoration: none;
 .aboutText:hover {
     color: rgb(145, 253, 21);
 
+}
+
+.tester1 {
+    text-align: center;
+}
+.test1Btn {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.pokemonChoice {
+    text-align: center;
+}
+
+.pikaBtn {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: none;
+    text-decoration: none;
+    border: none;
 }

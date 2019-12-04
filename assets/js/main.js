@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    $(".tester1").hide();
+});
+
+
+
 $(".appleii").mouseover(function () {
     $(".codeTextHover").text("<_CODE>");
 });
@@ -27,6 +33,27 @@ $(".meCartoon").mouseover(function () {
 });
 $(".meCartoon").mouseout(function () {
     $(".aboutTextHover").text("");
+});
+
+
+//special stuff
+$(".E_magic").click(function () {
+    $(".meCartoon").hide();
+    $(".appleii").hide();
+    $(".saw").hide();
+    $(".tester1").show();
+    $(".pokemonChoice").append('<button class="pikaBtn"> <img id="pikachu" src="assets/images/pikachu.png" /> </button>');
+    $(".E_magic").hide();
+});
+
+
+$(".test1Btn").click(function () {
+    $(".meCartoon").show();
+    $(".appleii").show();
+    $(".saw").show();
+    $(".tester1").hide();
+    $(".pokemonChoice").empty();
+    $(".E_magic").show();
 });
 
 
