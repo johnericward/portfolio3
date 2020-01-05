@@ -4,7 +4,8 @@
     font-size: 800%;
     margin: 0;
     padding: 2% auto 0 auto;
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* text-shadow: 2px 2px 4px #000000; */
+    
 }
 
 .titleSpan:hover {
@@ -21,14 +22,14 @@ text-decoration: none;
 }
 
 .E_magic {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: none;
     border: none;
 }
 
 .E_magic:hover {
-    color: rgb(145, 253, 21);
+    /* color: rgb(145, 253, 21); */
     text-decoration: none;
 }
 
@@ -66,6 +67,7 @@ text-decoration: none;
     margin: 0 auto 0 auto;
     width: 80%;
     
+    
 }
 
 .sawTextHover {
@@ -76,12 +78,34 @@ text-decoration: none;
 
 /* CODING PORTFOLIO PAGE */
 
-
+/* .siteTitleAreaPortfolio {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+} */
+.wholeCardArea {
+    background-image: linear-gradient(to bottom, #FFFFFF, #F0E6D7);
+}
 .codeSiteCards {
     display: block;
     margin: 7% auto;
     width: 80%
 }
+
+/* .codeCard1 {
+    background-color: #F0E6D7;
+}
+.codeCard2 {
+    background-color: #F4Ae3F;
+}
+.codeCard3 {
+    background-color: #28696A;
+}
+.codeCard4 {
+    background-color: #213058;
+}
+.codeCard5 {
+    background-color: rgb(73, 1, 19);
+} */
 
 
 /* ABOUT ME PAGE */

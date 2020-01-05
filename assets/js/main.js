@@ -1,5 +1,26 @@
 $(document).ready(function() {
     $(".tester1").hide();
+    $(".titleSpan").hide();
+    $(".titleSpan").fadeIn(2000);
+
+    // index fade in animations
+    $(".meCartoon").hide();
+    $(".meCartoon").delay(1000).fadeIn(1500);
+
+    $(".appleii").hide();
+    $(".appleii").delay(2000).fadeIn(1500);
+
+    $(".saw").hide();
+    $(".saw").delay(3000).fadeIn(1500);
+    // end of index fade in animations
+
+    // about fade in animations
+    $(".mePic").hide();
+    $(".mePic").delay(1000).fadeIn(1500);
+
+    $(".aboutText").hide();
+    $(".aboutText").delay(2000).fadeIn(1500);
+    //end of about fade in animations
 });
 
 
