@@ -5,7 +5,7 @@
     margin: 0;
     padding: 2% auto 0 auto;
     /* text-shadow: 2px 2px 4px #000000; */
-    
+
 }
 
 .titleSpan:hover {
@@ -37,6 +37,9 @@ text-decoration: none;
     opacity: 0;
     width: 10px;
     
+} */
+/* .aboutMeDiv {
+    height:220px;
 } */
 .meCartoon {
     display: block;
@@ -82,9 +85,9 @@ text-decoration: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
 } */
-.wholeCardArea {
+/* .wholeCardArea {
     background-image: linear-gradient(to bottom, #FFFFFF, #F0E6D7);
-}
+} */
 .codeSiteCards {
     display: block;
     margin: 7% auto;
@@ -123,12 +126,11 @@ text-decoration: none;
 }
 
 .aboutText {
-    padding: 40% 2%   
+    padding: 40% 2%;
 }
 
 .aboutText:hover {
     color: rgb(145, 253, 21);
-
 }
 
 .tester1 {

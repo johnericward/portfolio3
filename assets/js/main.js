@@ -21,6 +21,8 @@ $(document).ready(function() {
     $(".aboutText").hide();
     $(".aboutText").delay(2000).fadeIn(1500);
     //end of about fade in animations
+
+    $(".aboutTextHover").css("color","white");
 });
 
 
@@ -50,10 +52,10 @@ $(".saw").mouseout(function () {
 
 
 $(".meCartoon").mouseover(function () {
-    $(".aboutTextHover").text("<_ABOUT>");
+    $(".aboutTextHover").text("<_ABOUT>").css("color", "rgb(145, 253, 21)");
 });
 $(".meCartoon").mouseout(function () {
-    $(".aboutTextHover").text("");
+    $(".aboutTextHover").text("_").css("color","white");
 });
 
 
