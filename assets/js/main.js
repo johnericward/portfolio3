@@ -1,7 +1,15 @@
-$(document).ready(function() {
-    $(".tester1").hide();
+$(document).ready(function () {
+    
+    //secret button stuff
+    $(".gameExitBtn").hide();
+
+    //about color text "_" under cartoon of me on index page to keep spacing consistent
+    $(".aboutTextHover").css("color","white");
+
+    //title fade in animations across all pages
     $(".titleSpan").hide();
     $(".titleSpan").fadeIn(2000);
+    //end of title fade in animations across all pages
 
     // index fade in animations
     $(".meCartoon").hide();
@@ -22,7 +30,12 @@ $(document).ready(function() {
     $(".aboutText").delay(2000).fadeIn(1500);
     //end of about fade in animations
 
-    $(".aboutTextHover").css("color","white");
+    //code fade in animations
+    $(".codeSiteCards").hide();
+
+    $(".codeCard1, .codeCard3, .codeCard5").delay(1000).fadeIn(1500);
+    $(".codeCard2, .codeCard4, .codeCard6").delay(2000).fadeIn(1500);
+    //end of code fade in animations
 });
 
 
@@ -59,26 +72,54 @@ $(".meCartoon").mouseout(function () {
 });
 
 
+
+
+
 //special stuff
 $(".E_magic").click(function () {
     $(".meCartoon").hide();
     $(".appleii").hide();
     $(".saw").hide();
-    $(".tester1").show();
-    $(".pokemonChoice").append('<button class="pikaBtn"> <img id="pikachu" src="assets/images/pikachu.png" /> </button>');
+    $(".gameExitBtn").show();
+    // $(".gameGoesHere").append('<button class="pikaBtn"> <img id="pikachu" src="assets/images/pikachu.png" /> </button>');
+    $(".gameGoesHere").append('<canvas id="gameCanvas" width="480" height="320"></canvas>');
     $(".E_magic").hide();
 });
 
 
-$(".test1Btn").click(function () {
+$(".gameExitBtn").click(function () {
     $(".meCartoon").show();
     $(".appleii").show();
     $(".saw").show();
-    $(".tester1").hide();
-    $(".pokemonChoice").empty();
+    $(".gameExitBtn").hide();
+    $(".gameGoesHere").empty();
     $(".E_magic").show();
 });
 
 
+var sketchProc = function (processingInstance) {
+     
+    with (processingInstance) {
+            
+        size(400, 700);
+            
+        frameRate(30);
 
+        draw = function () {
+        
+            background(255, 255, 255);
+           
+            noStroke();
 
+            fill(100, 100, 100);
+            rect(20, 20, 20, 20);
+        };
+    }};
+
+// Get the canvas that Processing-js will use
+    
+var canvas = document.getElementById("gameCanvas"); 
+  
+  // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    
+var processingInstance = new Processing(canvas, sketchProc); 
