@@ -2,6 +2,14 @@
     background-color:red;
 } */
 
+.titleInit {
+    color: black;
+    text-align: center;
+    font-size: 800%;
+    margin: 0;
+    padding: 2% auto 0 auto;
+}
+
 .titleSpan {
     color: black;
     text-align: center;
@@ -26,18 +34,18 @@ text-decoration: none;
 }
 
 .E_magic {
-    color: rgb(255, 255, 255);
+    color: black;
     text-decoration: none;
     background-color: none;
     border: none;
 }
 
 .E_magic:hover {
-    /* color: rgb(145, 253, 21); */
+    color: rgb(145, 253, 21);
     text-decoration: none;
 }
 
-canvas { background: #eee; display: block; margin: 0 auto; }
+/* canvas { background: #eee; display: block; margin: 0 auto; } */
 
 /* .meSpacerHeight {
     opacity: 0;
@@ -84,6 +92,13 @@ canvas { background: #eee; display: block; margin: 0 auto; }
     color: rgb(145, 253, 21);
 }
 
+
+.gameboy {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    
+}
 
 /* CODING PORTFOLIO PAGE */
 
