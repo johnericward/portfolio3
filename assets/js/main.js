@@ -93,6 +93,13 @@ $(".meCartoon").mouseout(function () {
 });
 
 
+$(".alcott").mouseover(function () {
+    $(".viewBoxBuild").any("<_BUILD>");
+});
+$(".alcott").mouseout(function () {
+    $(".viewBoxBuild").empty();
+});
+
 
 
 
@@ -115,7 +122,8 @@ $(".gameExitBtn").click(function () {
     $(".appleii").show();
     $(".saw").show();
     $(".gameExitBtn").hide();
-    $(".gameGoesHere").empty();
+    // $(".gameGoesHere").empty();
+    $(".gameboy").hide();
     $(".E_magic").show();
     $(".E_replace").hide();
 });

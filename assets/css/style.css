@@ -1,4 +1,8 @@
-/* .bodyWhite {
+
+.dumb {
+    text-align:center;
+    font-size: 90px;
+}/* .bodyWhite {
     background-color:red;
 } */
 
@@ -132,13 +136,43 @@ text-decoration: none;
 } */
 
 
+.gradientCard1 {
+    background-image: linear-gradient(to bottom right, rgb(150, 255, 255),rgb(233, 255, 255));
+    box-shadow: 5px 5px 10px #888888;
+    
+}
+.gradientCard2 {
+    background-image: linear-gradient(to bottom right, rgb(150, 255, 255),rgb(233, 255, 255));
+    /* background-image: linear-gradient(to bottom right, rgb(187, 209, 255),rgb(253, 233, 255)); */
+    box-shadow: 5px 5px 10px #888888;
+   
+}
+.gradientCard3 {
+    background-image: linear-gradient(to bottom right, rgb(150, 255, 255),rgb(233, 255, 255));
+    box-shadow: 5px 5px 10px #888888;
+}
+.gradientCard4 {
+    background-image: linear-gradient(to bottom right, rgb(150, 255, 255),rgb(233, 255, 255));
+    box-shadow: 5px 5px 10px #888888;
+}
+.gradientCard5 {
+    background-image: linear-gradient(to bottom right, rgb(150, 255, 255),rgb(233, 255, 255));
+    box-shadow: 5px 5px 10px #888888;
+}
+.gradientCard6 {
+    background-image: linear-gradient(to bottom right, rgb(150, 255, 255),rgb(233, 255, 255));
+    box-shadow: 5px 5px 10px #888888;
+}
+
+
 /* ABOUT ME PAGE */
 
 
 .mePic {
     display: block;
     margin: 7% auto;
-    width: 80%
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mePicHover {
@@ -147,7 +181,10 @@ text-decoration: none;
 }
 
 .aboutText {
-    padding: 40% 2%;
+    /* padding: 40% 2%; */
+    display: block;
+    margin: 18% auto;
+    width: 80%
 }
 
 .aboutText:hover {
@@ -175,3 +212,17 @@ text-decoration: none;
     text-decoration: none;
     border: none;
 }
+
+.buildCards {
+    /* display: block; */
+    /* margin: 7% auto; */
+    display: inline;
+    margin: 1%;
+    width: 30%
+}
+
+/* .buildCards:hover {
+    display: block;
+    margin: 1%;
+    width: 50%
+} */
