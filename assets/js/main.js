@@ -29,13 +29,16 @@ $(document).ready(function () {
 
     // index fade in animations
     $(".meCartoon").hide();
-    $(".meCartoon").delay(1000).fadeIn(1500);
+    $(".meCartoon").fadeIn(1500);
 
     $(".appleii").hide();
-    $(".appleii").delay(2000).fadeIn(1500);
+    $(".appleii").delay(1000).fadeIn(1500);
 
     $(".saw").hide();
-    $(".saw").delay(3000).fadeIn(1500);
+    $(".saw").delay(2000).fadeIn(1500);
+
+    $(".titleSpan1").hide();
+    $(".titleSpan1").delay(3000).fadeIn(2000);
     // end of index fade in animations
 
     // about fade in animations
@@ -54,10 +57,10 @@ $(document).ready(function () {
     //end of code fade in animations
 });
 
-$(".titleSpan").mouseover(function () {
+$(".titleSpan1").mouseover(function () {
     $(".E_magic").css("color", "rgb(145, 253, 21)");
 });
-$(".titleSpan").mouseout(function () {
+$(".titleSpan1").mouseout(function () {
     $(".E_magic").css("color", "black");
 });
 
@@ -70,7 +73,7 @@ $(".appleii").mouseout(function () {
 
 
 $(".mePic").mouseover(function () {
-    $(".mePicHover").text("<E Ward>");
+    $(".mePicHover").text('<click the "_" in "E_WARD" on the homepage>');
 });
 $(".mePic").mouseout(function () {
     $(".mePicHover").text("");
@@ -109,7 +112,11 @@ $(".E_magic").click(function () {
     $(".appleii").hide();
     $(".saw").hide();
     $(".gameExitBtn").show();
+    // $(".container").show();
+
     $(".gameboy").show();
+    // $(".gameGoesHere").show();
+
     // $(".gameGoesHere").append('<button class="pikaBtn"> <img id="pikachu" src="assets/images/pikachu.png" /> </button>');
     // $(".gameGoesHere").append('<canvas id="gameCanvas" width="480" height="320"></canvas>');
     $(".E_magic").hide();
@@ -122,7 +129,7 @@ $(".gameExitBtn").click(function () {
     $(".appleii").show();
     $(".saw").show();
     $(".gameExitBtn").hide();
-    // $(".gameGoesHere").empty();
+    // $(".gameGoesHere").hide();
     $(".gameboy").hide();
     $(".E_magic").show();
     $(".E_replace").hide();
