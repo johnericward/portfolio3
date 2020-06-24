@@ -21,8 +21,8 @@ $(document).ready(function () {
 
 
     //title fade in animations across all pages
-    $(".titleSpan").hide();
-    $(".titleSpan").fadeIn(2000);
+    $(".titleDiv").hide();
+    $(".titleDiv").fadeIn(2000);
     //end of title fade in animations across all pages
 
     
@@ -73,7 +73,7 @@ $(".appleii").mouseout(function () {
 
 
 $(".mePic").mouseover(function () {
-    $(".mePicHover").text('<click the "_" in "E_WARD" on the homepage>');
+    $(".mePicHover").text('<me in the apple park restroom>');
 });
 $(".mePic").mouseout(function () {
     $(".mePicHover").text("");
@@ -162,3 +162,41 @@ $(".gameExitBtn").click(function () {
   // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
     
 // var processingInstance = new Processing(canvas, sketchProc); 
+
+
+
+
+//===================================================================================================
+//experiment media query from JS
+
+/*
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+      document.body.style.backgroundColor = "yellow";
+    } else {
+     document.body.style.backgroundColor = "pink";
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 992px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+
+
+*/
+
+/*
+function displayAboutText(z) {
+    if (z.matches) {
+        $(".mePicHover").text('<me in the apple park restroom>');
+    } else {
+        $(".mePicHover").text("");
+    }
+}
+  
+var z = window.matchMedia("(max-width: 992px)")
+displayAboutText(z)
+z.addListener(displayAboutText)
+
+*/

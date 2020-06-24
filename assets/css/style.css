@@ -6,13 +6,13 @@
     background-color:red;
 } */
 
-.titleInit {
+/* .titleInit {
     color: black;
     text-align: center;
     font-size: 800%;
     margin: 0;
     padding: 2% auto 0 auto;
-}
+} */
 
 .titleSpan1 {
     color: black;
@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-.titleSpan {
+.titleDiv {
     color: black;
     text-align: center;
     font-size: 800%;
@@ -38,7 +38,7 @@
     /* text-shadow: 2px 2px 4px #000000; */
 
 }
-.titleSpan:hover {
+.titleDiv:hover {
     color: rgb(145, 253, 21);
     text-decoration: none;
 }
@@ -63,7 +63,7 @@ text-decoration: none;
 .E_magic {
     color: black;
     text-decoration: none;
-    background-color: none;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     padding: 0;
     margin: 0;
@@ -96,6 +96,8 @@ text-decoration: none;
     color: rgb(145, 253, 21);
     
 }
+
+
 
 
 
@@ -207,8 +209,9 @@ text-decoration: none;
 
 .mePic {
     display: block;
-    margin: 7% auto;
-    width: 80%;
+    margin: 7% auto 1% auto;
+    width: 70%;
+    /* height: 100%; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -217,10 +220,15 @@ text-decoration: none;
     color: rgb(145, 253, 21);
 }
 
+.mePicHoverTextMobile {
+    text-align: center;
+    color: rgba(145, 253, 21, 0);
+}
+
 .aboutText {
     /* padding: 40% 2%; */
     display: block;
-    margin: 18% auto;
+    margin: 30% auto;
     width: 80%
 }
 
@@ -263,3 +271,36 @@ text-decoration: none;
     margin: 1%;
     width: 50%
 } */
+
+
+/* PHONES */
+
+  @media screen and (max-width: 992px) {
+    body {
+        /* vvv good for testing screen widths vvv */
+      /* background-color: rgb(192, 192, 192); */
+    }
+
+    .mePic {
+        /* display: block; */
+        /* margin: 7% auto; */
+        /* width: 90%; */
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .aboutText {
+        /* padding: 40% 2%; */
+        /* display: block; */
+        /* margin: 18% auto; */
+        width: 90%;
+        text-align: center;
+    }
+
+    .mePicHoverTextMobile {
+        text-align: center;
+        color: rgba(145, 253, 21);
+    }
+
+  }
+  
