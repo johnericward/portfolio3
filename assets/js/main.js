@@ -55,13 +55,13 @@ $(document).ready(function () {
     $(".codeCard1, .codeCard3, .codeCard5").delay(1000).fadeIn(1500);
     $(".codeCard2, .codeCard4, .codeCard6").delay(2000).fadeIn(1500);
     //end of code fade in animations
-});
+// });
 
 $(".titleSpan1").mouseover(function () {
     $(".E_magic").css("color", "rgb(145, 253, 21)");
 });
 $(".titleSpan1").mouseout(function () {
-    $(".E_magic").css("color", "black");
+    $(".E_magic").css("color", "rgb(72,72,72");
 });
 
 $(".appleii").mouseover(function () {
@@ -96,12 +96,12 @@ $(".meCartoon").mouseout(function () {
 });
 
 
-$(".alcott").mouseover(function () {
-    $(".viewBoxBuild").any("<_BUILD>");
-});
-$(".alcott").mouseout(function () {
-    $(".viewBoxBuild").empty();
-});
+// $(".alcott").mouseover(function () {
+//     $(".arrBoxBuild").any("<_BUILD>");
+// });
+// $(".alcott").mouseout(function () {
+//     $(".arrBoxBuild").empty();
+// });
 
 
 
@@ -134,9 +134,83 @@ $(".gameExitBtn").click(function () {
     $(".E_magic").show();
     $(".E_replace").hide();
 });
+    
+    //BUILD PAGE  ====================================================================
+    
+    
+// var imgLinkPart1 = "<a href=";
+    // var imgLinkPart3 = " target='blank'>";
+    // var imgLinkPart4 = "</a>";
+    // var imgLinkPart2Arr = [
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'",
+    //     "'http://unfol.io'"
+    // ];
+
+    //version with external links        
+    // for (i = 0; i < buildImgArr.length; i++) {
+    //     $(".arrBoxBuild").append(imgLinkPart1 + imgLinkPart2Arr[i] + imgLinkPart3 + imgArrPart1 + buildImgArr[i] + imgArrPart2 + imgLinkPart4);
+    // };
+    
+    //build page pushes images into page from buildImgArr
+    var imgArrPart1 = "<img src=";
+    var imgArrPart2 = ">";
+    var buildImgArr = [
+        "'assets/images/Alcott.jpg' class='imgArr alcottArr'", 
+        "'assets/images/Fans.jpg' class='imgArr fansArr'", 
+        "'assets/images/Lowell.jpg' class='imgArr lowellArr'",
+        "'assets/images/Q_Close.jpg' class='imgArr quiltCloseArr'",
+        "'assets/images/Noyer.jpg' class='imgArr noyerArr'",
+        "'assets/images/Whale.jpg' class='imgArr whaleArr'",
+        "'assets/images/Q_Trees.jpg' class='imgArr quiltTreesArr'",
+        "'assets/images/Rele_Wall.jpg' class='imgArr releWallArr'",
+        "'assets/images/Rele_Studio.jpg' class='imgArr releStudioArr'"
+    ];
+    
+    //version without links
+    function buildImgArrFxn() {
+        for (i = 0; i < buildImgArr.length; i++) {
+            $(".arrBoxBuild").append(imgArrPart1 + buildImgArr[i] + imgArrPart2);
+        };
+        console.log("buildImgArrFxn is run");
+    };
+    //runs fxn from above
+    buildImgArrFxn();
 
 
-// var sketchProc = function (processingInstance) {
+    //made these vars global just in case
+    var alcottPart1 = "<img src=";
+    var alcottMainSrc = "'assets/images/Alcott.jpg' class='bigAlcott outClass'";
+    var alcottPart3 = ">";
+    //once the buildImgArrFxn runs on page load you can click the first image in the array
+    $(".alcottArr").click(function () {
+
+        $(".highlightBoxBuild").append(alcottPart1 + alcottMainSrc + alcottPart3);
+        $(".arrBoxBuild").empty();
+        console.log("alcott from the buildArr is clicked")
+    });
+
+    //after clicking Alcott from the array it should be clickable via its classes of bigAlcott or outClass from line187
+    $(".outClass").bind('click', function () {
+        console.log("outClass is clicked")
+        buildImgArrFxn();
+        $(".highlightBoxBuild").empty();
+    });
+    
+    
+    //end of doc ready fxn
+});
+
+
+
+
+// var sketchProc = function (processingInstance) { 
      
 //     with (processingInstance) {
             

@@ -15,7 +15,8 @@
 } */
 
 .titleSpan1 {
-    color: black;
+    color: rgb(72, 72, 72);
+    font: sans-serif;
     /* text-align: center;
     font-size: 800%;
     margin: 0;
@@ -30,7 +31,7 @@
 }
 
 .titleDiv {
-    color: black;
+    color: rgb(72, 72, 72);
     text-align: center;
     font-size: 800%;
     margin: 0;
@@ -61,7 +62,7 @@ text-decoration: none;
 }
 
 .E_magic {
-    color: black;
+    color: rgb(72, 72, 72);
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -73,6 +74,20 @@ text-decoration: none;
     color: rgb(145, 253, 21);
     text-decoration: none;
 }
+
+.E_magic:focus {
+    outline: none;
+    box-shadow: none;
+  }
+/* .E_magic:visited {
+    color: rgb(72, 72, 72);
+}
+.E_magic:active {
+    color: rgb(72, 72, 72);
+}
+.E_magic:link {
+    color: rgb(72, 72, 72);
+} */
 
 /* canvas { background: #eee; display: block; margin: 0 auto; } */
 
@@ -135,6 +150,17 @@ text-decoration: none;
     width: 80%;
     
 }
+
+.gameExitBtn {
+    background: black;
+    border-radius: 15px;
+    color: white;
+}
+
+.gameExitBtn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
 /* CODING PORTFOLIO PAGE */
 
@@ -266,10 +292,71 @@ text-decoration: none;
     width: 30%
 }
 
+
+
 /* .buildCards:hover {
     display: block;
     margin: 1%;
     width: 50%
+} */
+
+
+/* experimentsssss */
+
+.highlightBoxBuild {
+    align-content: center;
+    text-align: center;
+    
+}
+
+.arrBoxBuild {
+    align-content: center;
+    text-align: center;
+}
+
+.imgArr {
+    width: 30%;
+    margin: 1%;
+}
+
+.bigAlcott {
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 1%;
+}
+
+
+
+/* 
+.indexMainNew {
+    position: relative;
+    
+    background-color: rgb(16, 170, 170);
+
+}
+
+.aboutMeNew {
+    position: relative;
+    
+    margin: auto, auto, auto, 0;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.appleiiNew {
+    position: absolute;
+ 
+    right: 0;
+    top: 7%;
+    background-color: rgba(102, 102, 56, 0.274);
+}
+
+.sawNew {
+    position: absolute;
+   
+    right: 0;
+    top: 50%;
+    background-color: rgba(0, 255, 191, 0.335);
 } */
 
 
@@ -300,6 +387,13 @@ text-decoration: none;
     .mePicHoverTextMobile {
         text-align: center;
         color: rgba(145, 253, 21);
+    }
+
+    .imgArr {
+        width: 90%;
+        margin: 1%;
+        text-align: center;
+        align-content: center;
     }
 
   }
